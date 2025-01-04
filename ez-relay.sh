@@ -104,7 +104,7 @@ After=network.target nss-lookup.target network-online.target
 [Service]
 CapabilityBoundingSet=CAP_NET_ADMIN CAP_NET_BIND_SERVICE CAP_SYS_PTRACE CAP_DAC_READ_SEARCH
 AmbientCapabilities=CAP_NET_ADMIN CAP_NET_BIND_SERVICE CAP_SYS_PTRACE CAP_DAC_READ_SEARCH
-ExecStart=/usr/bin/sing-box -D /var/lib/sing-box -C $CONFIG_PATH run
+ExecStart=/usr/bin/sing-box -D /var/lib/sing-box -C $RELAY_CONFIG_DIR run
 ExecReload=/bin/kill -HUP \$MAINPID
 Restart=on-failure
 RestartSec=10s
