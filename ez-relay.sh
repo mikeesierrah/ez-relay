@@ -14,8 +14,8 @@ CONFIG_PATH="$RELAY_CONFIG_DIR/config.json"
 
 # Prompt for configuration inputs
 read -p "Enter listen port: " LISTEN_PORT
-read -p "Enter destination address: " DESTINATION_ADDRESS
 read -p "Enter destination port: " DESTINATION_PORT
+read -p "Enter destination address: " DESTINATION_ADDRESS
 
 # Define the custom configuration using user inputs
 CONFIG_CONTENT="{
