@@ -9,7 +9,7 @@ A quick and easy relay setup using the Sing-Box core.
 Execute the following command to install:
 
 ```bash
-bash <(curl -Ls https://github.com/mikeesierrah/ez-warp/raw/master/ez-relay.sh)
+bash <(curl -Ls https://github.com/mikeesierrah/ez-relay/raw/master/ez-relay.sh)
 ```
 
 This will install the necessary tools and configure your system for relay functionality.
