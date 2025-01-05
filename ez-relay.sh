@@ -1,5 +1,6 @@
 #!/bin/bash
 
+apt update && apt install jq -y
 
 echo "Installing Sing-Box..."
 bash <(curl -fsSL https://sing-box.app/deb-install.sh)
