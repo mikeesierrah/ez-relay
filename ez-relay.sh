@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Install Sing-Box using the provided script
+
 echo "Installing Sing-Box..."
 bash <(curl -fsSL https://sing-box.app/deb-install.sh)
 
