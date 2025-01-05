@@ -24,6 +24,7 @@ CONFIG_CONTENT="{
             \"type\": \"direct\",
             \"tag\": \"direct-in\",
             \"listen\": \"::\",
+            \"tcp_fast_open\": \"true\",
             \"listen_port\": $LISTEN_PORT,
             \"override_address\": \"$DESTINATION_ADDRESS\",
             \"override_port\": $DESTINATION_PORT
@@ -62,6 +63,7 @@ inbound_rule=$(cat <<EOM
   "type": "direct",
   "tag": "tunnel-$port",
   "listen": "::",
+  "tcp_fast_open": true,
   "listen_port": $port,
   "override_address": "$IP",
   "override_port": $target
