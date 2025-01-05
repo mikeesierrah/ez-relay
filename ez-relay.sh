@@ -25,7 +25,7 @@ CONFIG_CONTENT="{
             \"type\": \"direct\",
             \"tag\": \"direct-in\",
             \"listen\": \"::\",
-            \"tcp_fast_open\": \"true\",
+            \"tcp_fast_open\": true,
             \"listen_port\": $LISTEN_PORT,
             \"override_address\": \"$DESTINATION_ADDRESS\",
             \"override_port\": $DESTINATION_PORT
